@@ -6,7 +6,7 @@ A simple 3D drawing canvas built with React and Three.js.
 
 [https://bloom-doodle.netlify.app](https://bloom-doodle.netlify.app)
 
-<img src="./public/media/bloom-demo.gif" alt="Demo" width="800" />
+<img src="./public/bloom-demo.gif" alt="Demo" width="800" />
 
 ## Features
 

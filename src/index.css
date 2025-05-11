@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix for mobile viewport height */
+:root {
+  --vh: 1vh;
+}
+
+/* Prevent scrolling and bouncing on mobile */
+html, body {
+  position: fixed;
+  width: 100%;
+  height: 100vh; /* Fallback */
+  height: calc(var(--vh) * 100);
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Update app container height */
+#root {
+  height: 100vh; /* Fallback */
+  height: calc(var(--vh) * 100);
+}
+/* Prevent text selection */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
